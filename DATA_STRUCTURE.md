@@ -1,4 +1,4 @@
-# This will be the build structure of the application's folder organization.
+#  Structure of the application's folder organization.
 
 ```mermaid
 stateDiagram-v2
@@ -19,6 +19,10 @@ stateDiagram-v2
                     [*]-->CameraAnalysis/
                     state CameraAnalysis{
                         [*]-->anlysis.py
+                    }
+                    [*]-->Tensor/
+                    state Tensor/{
+                        tensorflow_utils.py
                     }
                 }
             }
